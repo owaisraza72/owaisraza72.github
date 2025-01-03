@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+  
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      form {
+        padding: 20px;
+        background: white;
+        box-shadow: 0 2px 10px rgb(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+
+      legend {
+        font-weight: bold;
+      }
+
+      label {
+        display: block;
+      }
+
+      fieldset {
+        padding: 18px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+
+      button {
+        padding: 10px 15px;
+        background-color: #2fc2a9;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      button:hover {
+        background-color: #179681;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label>
+          First Name:
+          <input type="text" name="first name" required />
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name=" last name" />
+        </label>
+
+        <label>
+          Password: <input type="password" name="password" minlength="8"
+          required=/>
+        </label>
+
+        <label>
+          Bio:
+          <textarea name="textarea" rows="4" id="textarea" required>
+Hi</textarea
+          >
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label>
+          Male<input type="radio" name="gender" value="radio" required />
+        </label>
+
+        <label> Female<input type="radio" name="gender" required /> </label>
+
+        <label> Other<input type="radio" name="gender" required /> </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Intersets:</legend>
+        <label aria-required="true">
+          <input type="checkbox" name="checkbox" /> Music
+        </label>
+
+        <label> <input type="checkbox" name="checkbox" /> Reading </label>
+
+        <label> <input type="checkbox" name="checkbox" /> Sports </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Country:</legend>
+        Select Your Country:
+        <select name="content" required>
+          <option value="" disabled selected>Select Your Option</option>
+          <option value="palestine">Palestine</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="united states">United States</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="india">India</option>
+          <option value="england">England</option>
+          <option value="turkey">Turkey</option>
+          <option value="london">London</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Colors:</legend>
+        <label for="colors">Select your Preferred colors:</label>
+        <select name="colors" multiple size="5" required>
+          <option value="red">Red</option>
+          <option value="black">Black</option>
+          <option value="gray">Gray</option>
+          <option value="blue">Blue</option>
+          <option value="aqua">Aqua</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload Profile Picture</legend>
+        <label>
+          Choose a Profile Picture:
+          <input type="file" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label>
+          Date of Birth: <input type="date" name="date" required />
+        </label>
+
+        <label> Email:<input type="email" name="email" required /> </label>
+
+        <label>
+          Website:
+          <input type="url" name="url" required />
+        </label>
+
+        <label>
+          Search:
+          <input type="search" />
+        </label>
+      </fieldset>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
