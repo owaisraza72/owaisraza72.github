@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-  
       input,
       textarea,
       select {
         width: 100%;
-        padding: 5px;
+        padding: 8px;
         margin-bottom: 10px;
-        border-radius: 5px;
+        border-radius: 4px;
         border: 1px solid #ccc;
       }
 
@@ -53,59 +52,68 @@
       }
 
       button:hover {
-        background-color: #179681;
-      }
+        background-color: #179681;}
+        
+
     </style>
   </head>
   <body>
     <h1>User Registration Form</h1>
     <form>
+      
       <fieldset>
         <legend>Personal Information</legend>
 
-        <label>
-          First Name:
-          <input type="text" name="first name" required />
-        </label>
-
-        <label>
-          Last Name:
-          <input type="text" name=" last name" />
-        </label>
-
-        <label>
-          Password: <input type="password" name="password" minlength="8"
-          required=/>
-        </label>
-
-        <label>
-          Bio:
-          <textarea name="textarea" rows="4" id="textarea" required>
-Hi</textarea
-          >
-        </label>
-      </fieldset>
+          
+          <label>
+            First Name:
+            <input type="text" name="first name" required />
+          </label>
+          
+          <label>
+            Last Name:
+            <input type="text" name=" last name" />
+          </label>
+          
+          <label>
+            Password: <input type="password" name="password" minlength="8"
+            required=/>
+          </label>
+          
+          <label>
+            Bio:
+            <textarea name="textarea" rows="4" id="textarea" required>
+              Hi</textarea
+              >
+            </label>
+          </fieldset>
+      
 
       <fieldset>
         <legend>Gender</legend>
-        <label>
-          Male<input type="radio" name="gender" value="radio" required />
-        </label>
-
-        <label> Female<input type="radio" name="gender" required /> </label>
-
-        <label> Other<input type="radio" name="gender" required /> </label>
+          <label>
+            Male<input type="radio" name="gender" value="radio" required />
+          </label>
+          
+          <label> Female<input type="radio" name="gender" required /> </label>
+          
+          <label> Other<input type="radio" name="gender" required /> </label>
+        
       </fieldset>
 
       <fieldset>
         <legend>Intersets:</legend>
-        <label aria-required="true">
-          <input type="checkbox" name="checkbox" /> Music
+        <label>
+          Music <input type="checkbox" name="checkbox" required />
         </label>
 
-        <label> <input type="checkbox" name="checkbox" /> Reading </label>
+        <label>
+          Reading<input type="checkbox" name="checkbox" required />
+        </label>
 
-        <label> <input type="checkbox" name="checkbox" /> Sports </label>
+        <label
+          >Sports <input type="checkbox" name="checkbox" required />
+        </label>
       </fieldset>
 
       <fieldset>
