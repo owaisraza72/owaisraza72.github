@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      input,
+     .ab,
       textarea,
       select {
         width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
+        padding: 10px;
+        margin-bottom: 15px;
         border-radius: 4px;
         border: 1px solid #ccc;
       }
@@ -28,10 +28,11 @@
 
       label {
         display: block;
+        margin: 10px 0 5px;
       }
 
       fieldset {
-        padding: 18px;
+        padding: 15px 22px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
       }
@@ -40,6 +41,9 @@
         font-family: Arial, sans-serif;
         padding: 20px;
         background-color: #f9f9f9;
+      }
+      h1 {
+        margin-top: 10px;
       }
 
       button {
@@ -52,67 +56,62 @@
       }
 
       button:hover {
-        background-color: #179681;}
-        
-
+        background-color: #179681;
+      }
     </style>
   </head>
   <body>
     <h1>User Registration Form</h1>
     <form>
-      
       <fieldset>
         <legend>Personal Information</legend>
 
-          
-          <label>
-            First Name:
-            <input type="text" name="first name" required />
-          </label>
-          
-          <label>
-            Last Name:
-            <input type="text" name=" last name" />
-          </label>
-          
-          <label>
-            Password: <input type="password" name="password" minlength="8"
-            required=/>
-          </label>
-          
-          <label>
-            Bio:
-            <textarea name="textarea" rows="4" id="textarea" required>
-              Hi</textarea
-              >
-            </label>
-          </fieldset>
-      
+        <label>
+          First Name:
+          <input class="ab" type="text" name="first name" required placeholder="First Name"/>
+        </label>
+
+        <label>
+          Last Name:
+          <input class="ab" type="text" name=" last name" placeholder="Last Name"/>
+        </label>
+
+        <label>
+          Password: <input class="ab" type="password" name="password" minlength="8" placeholder="Password"
+          required=/>
+        </label>
+
+        <label>
+          Bio:
+          <textarea name="textarea" rows="4" id="textarea" required>
+ Hi</textarea
+          >
+        </label>
+      </fieldset>
 
       <fieldset>
         <legend>Gender</legend>
-          <label>
-            Male<input type="radio" name="gender" value="radio" required />
-          </label>
-          
-          <label> Female<input type="radio" name="gender" required /> </label>
-          
-          <label> Other<input type="radio" name="gender" required /> </label>
-        
+        <label>
+          <input type="radio" name="gender" value="radio" required />Male
+        </label>
+
+        <label> <input type="radio" name="gender" required />Female </label>
+
+        <label> <input type="radio" name="gender" required />Other </label>
       </fieldset>
 
       <fieldset>
         <legend>Intersets:</legend>
         <label>
-          Music <input type="checkbox" name="checkbox" required />
+           <input type="checkbox" name="checkbox" required />Music
         </label>
 
         <label>
-          Reading<input type="checkbox" name="checkbox" required />
+          <input type="checkbox" name="checkbox" required />Reading
         </label>
 
         <label
-          >Sports <input type="checkbox" name="checkbox" required />
+          > <input type="checkbox" name="checkbox" required />Sports
         </label>
       </fieldset>
 
@@ -149,26 +148,26 @@
         <legend>Upload Profile Picture</legend>
         <label>
           Choose a Profile Picture:
-          <input type="file" required />
+          <input class="ab" type="file" required />
         </label>
       </fieldset>
 
       <fieldset>
         <legend>Additional Information</legend>
         <label>
-          Date of Birth: <input type="date" name="date" required />
+          Date of Birth: <input class="ab" type="date" name="date" required />
         </label>
 
-        <label> Email:<input type="email" name="email" required /> </label>
+        <label> Email:<input class="ab" type="email" name="email" required placeholder=" Email"/> </label>
 
         <label>
           Website:
-          <input type="url" name="url" required />
+          <input class="ab" type="url" name="url" required placeholder="Website URL" />
         </label>
 
         <label>
           Search:
-          <input type="search" />
+          <input class="ab" type="search" />
         </label>
       </fieldset>
 
